@@ -112,6 +112,7 @@ const ImageAPI = (props) => {
             }}
           />
         </pre>
+      </div>
     </Layout>
   );
 };

@@ -25,7 +25,8 @@
   "license": "MIT",
   "main": "n/a",
   "resolutions": {
-    "contentful": "6.1.3"
+    "contentful": "6.1.3",
+    "gatsby-plugin-utils": "3.17.0"
   },
   "scripts": {
     "develop": "gatsby develop",

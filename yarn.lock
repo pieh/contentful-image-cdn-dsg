@@ -5118,6 +5118,27 @@ gatsby-cli@^5.1.0-next.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
+gatsby-core-utils@^3.23.0:
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.24.0.tgz#0e757bac28ad953a929046138403b3663b733cf7"
+  integrity sha512-P4tbcYOJ1DSYKRP4gIAR9Xta/d/AzjmsK2C6PzX7sNcGnviDKtAIoeV9sE0kNXOqBfUCez25zmAi2cq8NlaxKw==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fastq "^1.13.0"
+    file-type "^16.5.3"
+    fs-extra "^10.1.0"
+    got "^11.8.5"
+    import-from "^4.0.0"
+    lmdb "2.5.3"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    resolve-from "^5.0.0"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-core-utils@^4.1.0-next.0:
   version "4.1.0-next.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.1.0-next.0.tgz#17df6f77d4f4290470e6f0b599e0d150f82c998c"
@@ -5272,18 +5293,18 @@ gatsby-plugin-typography@^5.1.0-next.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-plugin-utils@^4.1.0-next.0:
-  version "4.1.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.1.0-next.0.tgz#ef37a14ba26d152c9eb77e8fc4da0e28be8251c8"
-  integrity sha512-yAm5FOx65t0UF0dbu3+nV3HOZeK8/jw0cnSY7pmu1PAzdiRFUgdLClRiQx1+8s8CuY3PoVl7k4ep+TLJCmrTxw==
+gatsby-plugin-utils@3.17.0, gatsby-plugin-utils@^4.1.0-next.0:
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.17.0.tgz#02106fa52ccef70b915f1fe00e085ea363642317"
+  integrity sha512-THfQJ9y5V5pdUPkTRExK/3pI1OMTN8srA40dL7HeEoSVhiaEs+Bk45q1d8O1G6P7ulmLFinhOOBi56H4cAdqBg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@gatsbyjs/potrace" "^2.3.0"
     fastq "^1.13.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^4.1.0-next.0"
-    gatsby-sharp "^1.1.0-next.0"
-    graphql-compose "^9.0.9"
+    gatsby-core-utils "^3.23.0"
+    gatsby-sharp "^0.17.0"
+    graphql-compose "^9.0.7"
     import-from "^4.0.0"
     joi "^17.4.2"
     mime "^3.0.0"
@@ -5302,6 +5323,14 @@ gatsby-script@^2.1.0-next.0:
   version "2.1.0-next.0"
   resolved "https://registry.yarnpkg.com/gatsby-script/-/gatsby-script-2.1.0-next.0.tgz#8d91e3378679bbcbd20aee2bf9712c207c8c54aa"
   integrity sha512-XZZ0inilfCMi6AM/a9m9A+s8FyZyWtKkBMZKnnjuTgOmSnon8fdmIoRanX3iU8+HUB3S4DyNQgKbozhppU3kHA==
+
+gatsby-sharp@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.17.0.tgz#cc48e51d396cc4049f902ba60de6e78075241a3a"
+  integrity sha512-k1iGqqox19nD70cEPwVI8grAgbtXswZtuonlROAV02J7kpUP6ayfdvx7as6Phdr5jam+ZQ1vfsOu60yZZgr/LQ==
+  dependencies:
+    "@types/sharp" "^0.30.5"
+    sharp "^0.30.7"
 
 gatsby-sharp@^1.1.0-next.0:
   version "1.1.0-next.0"
@@ -5767,7 +5796,7 @@ graceful-fs@4.2.10, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, 
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-graphql-compose@^9.0.9:
+graphql-compose@^9.0.7, graphql-compose@^9.0.9:
   version "9.0.10"
   resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-9.0.10.tgz#1e870166deb1785761865fe742dea0601d2c77f2"
   integrity sha512-UsVoxfi2+c8WbHl2pEB+teoRRZoY4mbWBoijeLDGpAZBSPChnqtSRjp+T9UcouLCwGr5ooNyOQLoI3OVzU1bPQ==

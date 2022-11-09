@@ -1,15 +1,15 @@
-import React from "react"
-import * as PropTypes from "prop-types"
+import React from "react";
+import * as PropTypes from "prop-types";
 
-import { Link, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { Link, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import { rhythm } from "../utils/typography"
-import Layout from "../layouts"
+import { rhythm } from "../utils/typography";
+import Layout from "../layouts";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 const Product = ({ node }) => (
   <div>
@@ -38,12 +38,12 @@ const Product = ({ node }) => (
       </div>
     </Link>
   </div>
-)
+);
 
 class IndexPage extends React.Component {
   render() {
-    const usProductEdges = this.props.data.us.edges
-    const deProductEdges = this.props.data.german.edges
+    const usProductEdges = this.props.data.us.edges;
+    const deProductEdges = this.props.data.german.edges;
     return (
       <Layout>
         <div style={{ marginBottom: rhythm(2) }}>
@@ -76,13 +76,13 @@ class IndexPage extends React.Component {
           ))}
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-IndexPage.propTypes = propTypes
+IndexPage.propTypes = propTypes;
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query {
@@ -114,5 +114,6 @@ export const pageQuery = graphql`
         }
       }
     }
+    debugVars
   }
-`
+`;
